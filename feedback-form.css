@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    color: #191919;
+    background: rgb(16, 20, 20);
+}
+/* ------------------Header Section  Start -------------------------*/
+.header{
+    height: 25vh;
+    width: 100%;
+    padding: 0 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.logo{
+    width: 100px;
+    left: 5%;
+    height: 80%;
+}
+.nav-links{
+    padding: 20px 0;
+}
+.nav-links span{
+    color: rgb(253, 227, 193);
+    font-size: 30px;
+}
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+    border-top: 4px solid #191919;
+    border-bottom: 4px solid #191919;
+    padding: 5px 18px;
+    border-radius: 20px;
+    
+}
+
+.nav-links li:hover::before{
+    filter: blur(5px);
+}
+.nav-links li:hover::after{
+    filter: blur(20px);
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: rgb(250, 239, 223);
+}
+.nav-links li:hover{
+    animation: hue 2s linear infinite;
+}
+@keyframes hue {
+    0%{
+        border-top: 4px solid rgb(0, 117, 250);
+        border-bottom: 4px solid rgb(0, 117, 250);
+        filter: hue-rotate(0deg);
+    }
+
+    
+    
+    25%{
+        border-top: 4px solid rgb(236, 33, 243);
+        border-bottom: 4px solid rgb(236, 33, 243);
+        filter: hue-rotate(90deg);
+    }
+
+    
+    50%{
+        border-top: 4px solid rgb(30, 255, 0);
+        border-bottom: 4px solid rgb(30, 255, 0);
+        filter: hue-rotate(180deg);
+    }
+
+   
+    75%{
+        border-top: 4px solid rgb(255, 7, 40);
+        border-bottom: 4px solid rgb(255, 7, 40);
+        filter: hue-rotate(270deg);
+    }
+
+    
+
+    100%{
+        border-top: 4px solid rgb(248, 252, 6);
+        border-bottom: 4px solid rgb(248, 252, 6);
+        filter: hue-rotate(360deg);
+     }
+}
+
+
+
+/* ------------------------------- Header section ends ----------*/
+
+
+.box{
+    display: flex;
+}
+
+.rating-wrapper{
+    width: 500px;
+    height: 100%;
+    text-align: center;
+    margin-left: 130px;
+    margin-top: 100px;
+    direction: rtl;
+    color: honeydew;
+    
+}
+.rating-wrapper input{
+    display: none;
+}
+.rating-wrapper label{
+    display: inline-block;      
+    width:80px;
+    position:relative; 
+    cursor: pointer;
+}
+.rating-wrapper label:before{
+    content: "\2605";
+    position: absolute;
+    font-size: 100px;
+    display: inline-block;
+}
+.rating-wrapper label:after{
+    content: "\2605";
+    position: absolute;
+    font-size: 100px;
+    display: inline-block;
+    color: gold;
+    opacity: 0;
+}
+.rating-wrapper label:hover:after,
+.rating-wrapper label:hover ~ label:after,
+.rating-wrapper input:checked ~ label:after{
+    opacity: 1;
+}
+
+
+
+.container{
+    width: 420px;
+    align-items: center;
+    box-shadow: 0 0 15px rgb(13, 174, 202);
+    opacity: 0.9;
+    border-radius: 5px;
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: #022f40;
+    background-image: linear-gradient(43deg, #022f40 0%, #4e928f 30%, #0c6760 66%, #688a7d 100%);
+}
+.container form{
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+form h1{
+    padding: 5px;
+    font-size: 40px;
+}
+form .id{
+    position: relative;
+    padding-bottom: 5px;
+}
+.id i{
+    position: absolute;
+    font-size: 20px;
+    top: 30%;
+    right: 10px;
+    transform: translate(-50%);
+}
+form input{
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    border: 2px solid rgb(10, 10, 10);
+    border-radius: 4px;
+    background: rgb(180, 179, 179);
+    padding-right: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+form textarea{
+    width: 100%;
+    padding: 10px ;
+    border: 2px solid rgb(8, 8, 8);
+    border-radius: 4px;
+    background: rgb(179, 178, 178);
+    font-size: 17px;
+    font-weight: 600;
+    overflow: hidden;
+}
+form button{
+    background: rgb(180, 179, 179);
+    color: rgb(12, 12, 12);
+    width: 100%;
+    margin-top: 8px;
+    padding:10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    border:2px solid black;
+}

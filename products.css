@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow:auto;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #191919;
+    color:antiquewhite;
+}
+.header{
+    height: 130px;
+    width: 100%;
+    min-height: max-content;
+    padding: 0 8%;
+    position: relative;
+    display: block;
+    font-family: 'Lobster', cursive;
+    font-family: 'Prata', serif;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.logo{
+    width:100px;
+    left: 5%;
+}
+.nav-links{
+    padding: 20px 0;
+}
+.nav-links span{
+    color: rgb(253, 227, 193);
+    font-size: 35px;
+}
+
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+    border-top: 4px solid #191919;
+    border-bottom: 4px solid #191919;
+    padding: 5px 18px;
+    border-radius: 20px;
+    
+}
+.nav-links li:hover::before{
+    filter: blur(5px);
+}
+.nav-links li:hover::after{
+    filter: blur(20px);
+}
+.nav-links li a{
+    text-decoration: none;
+    color: rgb(250, 239, 223);
+    font-size: 20px;
+    
+}
+.nav-links li:hover{
+    animation: hue 2s linear infinite;
+}
+@keyframes hue {
+    0%{
+        border-top: 4px solid rgb(0, 117, 250);
+        border-bottom: 4px solid rgb(0, 117, 250);
+        filter: hue-rotate(0deg);
+    }
+
+    
+    
+    25%{
+        border-top: 4px solid rgb(236, 33, 243);
+        border-bottom: 4px solid rgb(236, 33, 243);
+        filter: hue-rotate(90deg);
+    }
+
+    
+    50%{
+        border-top: 4px solid rgb(30, 255, 0);
+        border-bottom: 4px solid rgb(30, 255, 0);
+        filter: hue-rotate(180deg);
+    }
+
+   
+    75%{
+        border-top: 4px solid rgb(255, 7, 40);
+        border-bottom: 4px solid rgb(255, 7, 40);
+        filter: hue-rotate(270deg);
+    }
+
+    
+
+    100%{
+        border-top: 4px solid rgb(248, 252, 6);
+        border-bottom: 4px solid rgb(248, 252, 6);
+        filter: hue-rotate(360deg);
+     }
+}
+/* -----product container ----------*/
+.product-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #181717;
+}
+/* ---------------- Card container contianing 3 cards -----------*/
+.product-container .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+/*-----container ends -*/
+/*------ Card start --*/
+.product-container .container .card{
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgb(32, 32, 32),
+                inset -5px -5px 5px rgb(240, 32, 84),
+                5px 5px 5px  rgb(32, 32, 32),
+                -5px -5px 5px rgb(9, 130, 167);
+    border-radius: 17px; 
+    margin: 30px;           
+}
+/* -----card ends -*/
+/*------------ Box of card start -*/
+.product-container .container .card .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #161414;
+    box-shadow: 0 10px 20px rgba(0,0,0, 0.1);
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+/*------------ Box of card end -*/
+
+/*------------ Box of card after hover -*/
+.product-container .container .card:hover .box {
+    transform: translateY(-70px);
+    box-shadow: 0 10px 40px rgba(0,0,0, 0.4);
+    background: linear-gradient(300deg,rgb(93, 32, 155),rgb(216, 27, 37));
+}
+
+
+/*------------ Content of card --- -*/
+.product-container .container .card .box .content{
+    padding: 20px;
+    text-align: center;
+}
+
+
+.product-container .container .card .box .content h2{
+    position:absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 5em;
+    color: rgba(14, 13, 13, 0.1);
+    transition: 0.5s;
+    pointer-events: none;
+}
+.product-container .container .card:hover .box .content h2{
+    color: rgba(206, 200, 200, 0.1);
+}
+.product-container .container .card:hover .box .content h3{
+    font-size: 1.8em;
+    color: rgb(8, 8, 8);
+    z-index: 1;
+    transition: 0.5s;
+}
+.product-container .container .card:hover .box .content p{
+    font-size: 1.2em;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .card:hover .box .content h3,
+.container .card:hover .box .content p{
+    color: rgb(15, 15, 15);
+}
+.product-container .container .card .box .content a{
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    background: rgb(12, 12, 12);
+    padding: 8px 20px;
+    margin-top: 15px;
+    border-radius: 17px;
+    border: 1px solid wheat;
+    color: rgb(253, 227, 193);
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(104, 104, 104, 0.2);
+}
+.product-container .container .card:hover .box .content a{
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    font-weight: 800;
+    border: 2px solid rgb(255, 255, 255);
+}
