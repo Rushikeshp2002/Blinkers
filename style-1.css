@@ -46,15 +46,16 @@ nav{
     z-index: 2;
 }
 .logo{
-    width: 100px;
+    max-width: 8vw;
     left: 5%;
 }
 .nav-links{
     padding: 20px 0;
+    font-size: 1vw;
 }
 .nav-links span{
     color: rgb(253, 227, 193);
-    font-size: 30px;
+    font-size: 1.8vw;
 }
 .nav-links li{
     display: inline-block;
@@ -124,23 +125,32 @@ nav{
     top: 50%;
     left: 50%;
     width: 90%;
-    /* color: rgb(253, 184, 184); */
+    /* color: rgb(228, 10, 10); */
     transform: translate(-50% ,-50%);
-    max-width: 900px;
+    max-width: 1200px;
     text-align: center;
+    
 }
 .content h1{
-    color: white;
-    font-size: 60px;
+    color: rgb(184, 202, 255);
+    font-size: 5vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.content h2{
+    color: rgb(255, 214, 228);
+    font-size:1.7vw;
+}
+
 .content h1 span{
     position: relative;
-    font-size: 60px;
+    /* font-size: 6vw; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
     margin-bottom: 40px;
-    color: rgb(0, 0, 0);
+    color: rgb(147, 252, 229);
     text-transform: capitalize;
-    -webkit-text-stroke: 0.1vw rgb(12, 12, 12);
+    /* -webkit-text-stroke: 0.1vw rgb(12, 12, 12); */
 }
 .content h1 span::before{
     content: attr(data-text);
@@ -149,7 +159,7 @@ nav{
     left: 0;
     height: 100%;
     width: 0;
-    color: floralwhite;
+    color: rgb(85, 124, 255);
     -webkit-text-stroke: 0vw rgb(12, 12, 12);
     border-right: 2px solid white;
     overflow: hidden;
@@ -165,10 +175,7 @@ nav{
         width: 100%;
     }
 }
-.content h2{
-    color: rgb(226, 225, 225);
-    font-size:30px;
-}
+
 @media(min-aspect-ratio:16/9){
     .back-video{
         width: 100%;
@@ -179,5 +186,44 @@ nav{
     .back-video{
         width: auto;
         height: 100%;
+    }
+}
+
+@media (min-width: 500px) {
+
+    .nav-links{
+        font-size: 2vw;
+        
+    }
+    .nav-links li a{
+        color: rgb(254, 88, 116);
+    }
+
+    .nav-links span{
+        color: rgb(255, 109, 109);
+    }
+    .header {
+         background-image: url("image.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+    }
+
+    .content h1{
+        font-size: 13rem;
+        color: #3cde3e;
+    
+    }
+
+    .content h1 span{
+        font-size: 14rem;
+        color: rgb(255, 229, 60);
+    }
+
+    .content h1 span::before{
+        color: #ff9767;
+    }
+
+    .content h2{
+        color: transparent;
     }
 }
