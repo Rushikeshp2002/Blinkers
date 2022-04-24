@@ -189,17 +189,24 @@ nav{
     }
 }
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
 
     .nav-links{
-        font-size: 2vw;
+        font-size: 3vw;
         
     }
     .nav-links li a{
         color: rgb(254, 88, 116);
+        
+    }
+
+    nav ul li{
+        display: inline-flex;
+        
     }
 
     .nav-links span{
+        font-size: 3vw;
         color: rgb(255, 109, 109);
     }
     .header {
@@ -209,13 +216,13 @@ nav{
     }
 
     .content h1{
-        font-size: 13rem;
+        font-size: 15vw;
         color: #3cde3e;
     
     }
 
     .content h1 span{
-        font-size: 14rem;
+        font-size: 19vw;
         color: rgb(255, 229, 60);
     }
 
