@@ -189,10 +189,10 @@ nav{
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1109px) {
 
     .nav-links{
-        font-size: 3vw;
+        font-size: 4vw;
         
     }
     .nav-links li a{
@@ -206,7 +206,7 @@ nav{
     }
 
     .nav-links span{
-        font-size: 3vw;
+        font-size: 4vw;
         color: rgb(255, 109, 109);
     }
     .header {
