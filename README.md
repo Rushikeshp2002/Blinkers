@@ -52,8 +52,7 @@ Here is My Website SS
  <h2> Nav hover effect <h2>
 <hr>
    <br>
-   <br>
-<img src = "https://github.com/nirmal7030/Images-for-git/blob/main/8.png"  width=100%>
+<img src = "https://github.com/Rushikeshp2002/DSA-Clg/blob/main/ezgif-3-6859f9b244.gif" align="center" style = "width : 100%">
    <br>
    <br>
    
