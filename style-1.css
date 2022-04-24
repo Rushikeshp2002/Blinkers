@@ -189,7 +189,7 @@ nav{
     }
 }
 
-@media (max-width: 1109px) {
+@media (max-width: 900px) {
 
     .nav-links{
         font-size: 4vw;
