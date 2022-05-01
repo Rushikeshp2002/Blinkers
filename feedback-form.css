@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Prata', serif;
 }
 body{
     position: absolute;
@@ -13,10 +15,12 @@ body{
 }
 /* ------------------Header Section  Start -------------------------*/
 .header{
-    height: 25vh;
+    height: 20vh;
     width: 100%;
     padding: 0 8%;
     position: relative;
+    font-family: 'Lobster', cursive;
+    font-family: 'Prata', serif;
 }
 nav{
     display: flex;
@@ -29,11 +33,12 @@ nav{
     height: 80%;
 }
 .nav-links{
-    padding: 20px 0;
+    padding: 35px 55px;
+    font-size: 1vw;
 }
 .nav-links span{
     color: rgb(253, 227, 193);
-    font-size: 30px;
+    font-size: 1.8vw;
 }
 .nav-links li{
     display: inline-block;
@@ -102,6 +107,11 @@ nav{
 /* ------------------------------- Header section ends ----------*/
 
 
+h1{
+    color: rgb(171, 178, 180);
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 50px;}
 .box{
     display: flex;
 }
@@ -110,7 +120,7 @@ nav{
     width: 500px;
     height: 100%;
     text-align: center;
-    margin-left: 130px;
+    margin-left: 160px;
     margin-top: 100px;
     direction: rtl;
     color: honeydew;
@@ -149,11 +159,13 @@ nav{
 
 .container{
     width: 420px;
+    display: flex;
+    justify-content: left;
     align-items: center;
     box-shadow: 0 0 15px rgb(13, 174, 202);
     opacity: 0.9;
     border-radius: 5px;
-    margin-left: 80px;
+    margin-left: 19vw;
     margin-top: 10px;
     margin-bottom: 30px;
     background-color: #022f40;
