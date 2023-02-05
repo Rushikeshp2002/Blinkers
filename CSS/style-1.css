@@ -4,19 +4,26 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     
+    
 } 
+
 /* --------------------------------- */
 
-body{
-    width: 100%;
-    height: 100%;
-    
-
-}
 /* Header part */
+main{
+    overflow: hidden;
+}
+
+a{
+    z-index: 100;
+}
+
+
+
 .img{
     width: 4rem;
     z-index: 1;
+    
 }
 
 .navbar-nav{
@@ -31,8 +38,8 @@ body{
 .area{
     background: #4e54c8;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-    width: 100%;
-    height:100%;
+    width: auto;
+    height:100vh;
     overflow: hidden;
     
    
@@ -72,7 +79,7 @@ body{
     width: 20px;
     height: 20px;
     animation-delay: 2s;
-    animation-duration: 12s;
+    animation-duration: 6s;
 }
 
 .circles li:nth-child(3){
@@ -87,7 +94,7 @@ body{
     width: 60px;
     height: 60px;
     animation-delay: 0s;
-    animation-duration: 18s;
+    animation-duration: 8s;
 }
 
 .circles li:nth-child(5){
@@ -108,7 +115,7 @@ body{
     left: 35%;
     width: 150px;
     height: 150px;
-    animation-delay: 7s;
+    animation-delay: 9s;
 }
 
 .circles li:nth-child(8){
@@ -116,7 +123,7 @@ body{
     width: 25px;
     height: 25px;
     animation-delay: 15s;
-    animation-duration: 45s;
+    animation-duration: 20s;
 }
 
 .circles li:nth-child(9){
@@ -124,7 +131,7 @@ body{
     width: 15px;
     height: 15px;
     animation-delay: 2s;
-    animation-duration: 35s;
+    animation-duration: 20s;
 }
 
 .circles li:nth-child(10){
@@ -155,22 +162,29 @@ body{
 
 
 .title{
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     position: relative;
     top: 10rem;
     font-family: 'Bungee Shade', cursive;
     color: white;
+    scroll-behavior: smooth;
 }
 
 /* main image */
+
+.para{
+    width: 100vw;
+    height: 100vh;
+    background-color: #4e54c8;
+}
 .main-img{
     width: 100vw;
     height: auto;
     display: flex;
     position: relative;
-    left: 10rem;
-    top: -5rem;
+    left: -100rem;
+    top: -35rem;
     scroll-behavior: smooth;
     z-index: 1;
 }
@@ -193,9 +207,16 @@ span{
     right: 10rem;
     scroll-behavior: smooth;
     font-family: 'Racing Sans One', cursive;
-    font-size: 10rem;
+    font-size: 8rem;
     color: white;
 }
+
+.sec1{
+    width: 100vw;
+    height: 90vh;
+}
+
+
 
 
 
