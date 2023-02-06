@@ -83,11 +83,15 @@
 							<a class="nav-link text-white mx-2 tab" href="products.html"
 								>Products</a
 							>
-							<a class="nav-link text-white mx-2 tab" href="Review.html">Reviews</a>
+							<a class="nav-link text-white mx-2 tab" href="Review.html"
+								>Reviews</a
+							>
 							<a class="nav-link text-white mx-2 tab" href="feedback-form.html"
 								>Feedback</a
 							>
-							<a class="nav-link text-white mx-2 tab" href="about.html">About</a>
+							<a class="nav-link text-white mx-2 tab" href="about.html"
+								>About</a
+							>
 						</div>
 					</div>
 				</div>
@@ -116,24 +120,95 @@
 
 				<div class="text">INTRODUCING <span id="blink">BLINKERS</span></div>
 			</div>
+			<!-- section 1 begins here -->
 
-      <div class="sec1" id="sec1">
+			<div class="sec1" id="sec1">
+          <p class="pro" id="pro">OUR
+            PRODUCTS</p>
+            <br>
+            <br>
+            <br>
+          <div class="box1">
+            <img src="Images/xiaomi glass.jpg" class="img-product1" id="img1" alt="">
+            <div class="box-part">
+              <h2 class="X-title">Xiaomi Smart Glasses</h2>
+            <p class="X-para">Imagine every smartphone function integrated into what you wear
+            </p>
+            <ul class="X-notes">
+              <li>-Connected to your phone</li>
+              <li>-GPS and Live route mapping</li>
+              <li>-Integrated with google assistant</li>
+
+            </ul>
+            </div>
+          </div>
+          
+        </div>
+        <!-- section1 ends here -->
+
+
+      <!-- section 2 -->
+      <div class="sec2" id="sec2">
+        <div class="box2">
+          <div class="box-part2">
+            <h2 class="X-title2">Snapchat Spectacles 3</h2>
+          <p class="X-para2">Imagine every smartphone function integrated into what you wear
+          </p>
+          <ul class="X-notes2">
+            <li>-Connected to your phone</li>
+            <li>-GPS and Live route mapping</li>
+            <li>-Integrated with google assistant</li>
+            
+          </ul>
+        </div>
+        <img src="Images/snapchatspec2.png" class="img-product2" id="img2" alt="">
+          
+        </div>
 
       </div>
+      <!-- section 2 ends here -->
+
+      <!-- section3 -->
+      <div class="sec3">
+        <img src="Images/oculus.png" class="img-product3" id="img3" alt="">
+        <h2 class="other">And <br> Coming <br> Many <br> More...</h2>
+      </div>
+      <!-- section3 ends here -->
+
+      
+
 		</main>
 
 		<script>
 			let glasses = document.getElementById("image");
 			let blink = document.getElementById("blink");
 			let are = document.getElementById("are");
+			let pro = document.getElementById("pro");
+			let img1 = document.getElementById("img1");
+			let img2 = document.getElementById("img2");
+			let img3 = document.getElementById("img3");
+			
 
 			window.addEventListener("scroll", function () {
 				let value = window.scrollY;
 				let value1 = window.scrollY;
+				let value2 = window.scrollY;
 				let value3 = window.scrollY;
+				let value4 = window.scrollY;
+				let value5 = window.scrollY;
+				let value6 = window.scrollY;
+				let value7 = window.scrollY;
+        
+
 				glasses.style.left = value + "px";
-				blink.style.left = value1 * 0.20 + "px";
-        are.style.right = value3 + "px";
+				blink.style.left = value1 * 0.2 + "px";
+				pro.style.left = value2 + "px";
+				are.style.right = value3 + "px";
+				img1.style.left = value4*0.10 + "px";
+				img2.style.left = value5*0.30 + "px";
+				img3.style.left = value6*0.13 + "px";
+			
+
 			});
 		</script>
 	</body>
