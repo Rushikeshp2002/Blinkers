@@ -12,97 +12,26 @@ body{
     min-width: 100vw;
     color: #191919;
     background: rgb(16, 20, 20);
+    
 }
 /* ------------------Header Section  Start -------------------------*/
-.header{
-    height: 20vh;
-    width: 100%;
-    padding: 0 8%;
-    position: relative;
-    font-family: 'Lobster', cursive;
-    font-family: 'Prata', serif;
+a{
+    z-index: 100;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;   
-}
-.logo{
-    width: 100px;
-    left: 5%;
-    height: 80%;
-}
-.nav-links{
-    padding: 35px 55px;
-    font-size: 1vw;
-}
-.nav-links span{
-    color: rgb(253, 227, 193);
-    font-size: 1.8vw;
-}
-.nav-links li{
-    display: inline-block;
-    margin: 0 15px;
-    border-top: 4px solid #191919;
-    border-bottom: 4px solid #191919;
-    padding: 5px 18px;
-    border-radius: 20px;
+
+
+
+.img{
+    width: 4rem;
+    z-index: 1;
     
 }
 
-.nav-links li:hover::before{
-    filter: blur(5px);
-}
-.nav-links li:hover::after{
-    filter: blur(20px);
-}
-
-.nav-links li a{
-    text-decoration: none;
-    color: rgb(250, 239, 223);
-}
-.nav-links li:hover{
-    animation: hue 2s linear infinite;
-}
-@keyframes hue {
-    0%{
-        border-top: 4px solid rgb(0, 117, 250);
-        border-bottom: 4px solid rgb(0, 117, 250);
-        filter: hue-rotate(0deg);
-    }
-
+.navbar-nav{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
     
-    
-    25%{
-        border-top: 4px solid rgb(236, 33, 243);
-        border-bottom: 4px solid rgb(236, 33, 243);
-        filter: hue-rotate(90deg);
-    }
-
-    
-    50%{
-        border-top: 4px solid rgb(30, 255, 0);
-        border-bottom: 4px solid rgb(30, 255, 0);
-        filter: hue-rotate(180deg);
-    }
-
-   
-    75%{
-        border-top: 4px solid rgb(255, 7, 40);
-        border-bottom: 4px solid rgb(255, 7, 40);
-        filter: hue-rotate(270deg);
-    }
-
-    
-
-    100%{
-        border-top: 4px solid rgb(248, 252, 6);
-        border-bottom: 4px solid rgb(248, 252, 6);
-        filter: hue-rotate(360deg);
-     }
 }
-
-
 
 /* ------------------------------- Header section ends ----------*/
 
@@ -114,6 +43,9 @@ h1{
     font-size: 50px;}
 .box{
     display: flex;
+    justify-content: space-between;
+    margin-left: 0rem;
+    width: 100vw;
 }
 
 .rating-wrapper{
@@ -160,12 +92,12 @@ h1{
 .container{
     width: 420px;
     display: flex;
-    justify-content: left;
+    justify-content: right;
     align-items: center;
     box-shadow: 0 0 15px rgb(13, 174, 202);
     opacity: 0.9;
     border-radius: 5px;
-    margin-left: 19vw;
+    margin-left: 60vw;
     margin-top: 10px;
     margin-bottom: 30px;
     background-color: #022f40;
