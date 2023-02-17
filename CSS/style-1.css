@@ -7,14 +7,22 @@
 
 /* --------------------------------- */
 
-/* Header part */
-main{
-    overflow: hidden;
+
+.bodi{
+    max-width: 100%;
+    height: auto;
 }
+
+.main{
+    overflow-x: hidden;
+}
+
 
 a{
     z-index: 100;
 }
+
+
 
 
 
@@ -36,9 +44,9 @@ a{
 .area{
     background: #4e54c8;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-    width: auto;
+    max-width: 100vw;
     height:100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .circles{

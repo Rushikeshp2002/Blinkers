@@ -1,0 +1,69 @@
+@media (min-width:1900px) {
+    .title{
+        font-size: 6rem;
+    }
+
+    .main-img{
+        position: relative;
+        top: -50rem;
+    }
+
+    .text{
+        position: absolute;
+        top: 80rem;
+        font-size: 16rem;
+    }
+    span{
+        font-size: 12rem;
+    }
+    .pro{
+        font-size: 14rem;
+        margin-left: -200rem;
+    }
+    .other{
+        position: relative;
+        top: -40rem;
+        font-size: 10rem;
+    }
+    .X-title{
+        font-size: 5rem;
+    }
+    .X-para{
+        font-size: 2rem;
+    }
+    .X-notes{
+        font-size: 1.6rem;
+    }
+    .X-title2{
+        font-size: 5rem;
+    }
+    .X-para2{
+        font-size: 2rem;
+    }
+    .X-notes2{
+        font-size: 1.6rem;
+    }
+    
+}
+
+
+
+@media (max-width:900px) {
+    .bodi{
+        width: 100vw;
+        background-color: black;
+        
+    }
+    
+    .main{
+        overflow: scroll;
+        padding: 0px;
+        margin: 0px;
+    }
+    .img{
+        width: 10rem;
+    }
+
+    
+    
+}
